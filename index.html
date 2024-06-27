@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" href="logo-sm.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Games</title>
+</head>
+<body>
+    <div class="first-sec  ">
+
+        </div>
+        <nav class="navbar navbar-expand-lg  rounded-4 shadow-lg text-uppercase m-auto nav-position  " id="navbar">
+              <a class="navbar-brand ms-2 me-5 pe-5" href="#">
+                  <img src="logo-sm.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"> GAME REVIEWS 
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  ms-5 ps-5 mb-lg-0 navlink-clr menu">
+                    <li class="nav-item px-4">
+                        <a class="nav-link active" aria-current="page" href="#" data-category="mmorpg">mmorpg</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#" data-category="shooter">shooter</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#" data-category="sailing">sailing</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#" data-category="permadeath">permadeath</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#" data-category="superhero">superhero</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#" data-category="pixel">pixel</a>
+                    </li>
+                    
+                </ul>
+              </div>
+            </nav>
+
+  
+
+    <div class="container sec-section">
+        <div class="row games" id="gameData">
+        </div>
+    </div>
+
+    <div class="loading d-none">
+        <span class="loader"></span>
+     </div>
+
+     <div class="lighBoxContainer d-none">
+        <div class="lightBox m-5 details">
+            <div class="row ">
+                <div class="d-flex justify-content-between">
+                    <h2 class="pb-2">Details game</h2>
+                    <i class="btn-close btn-close-white" id="closeBtn"></i>
+                </div>
+                <div class="col-lg-4">
+                    <img id="gameThumbnail" src="">
+                </div>
+                <div class="col-lg-8 ps-5">
+                    <h2 id="gameTitle"></h2>
+                    <p id="gameCategory"></p>
+                    <p id="gamePlatform"></p>
+                    <p id="gameStatus"></p>
+                    <p id="gameDescription"></p>
+                    <a id="gameLink" type="button" class="btn btn-outline-info" href="#">Show Game</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="loading d-none">
+        <span class="loader"></span>
+
+    </div>
+
+    <script src="js/index.js" type="module"></script>
+
+</body>
+</html>

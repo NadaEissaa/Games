@@ -1,0 +1,169 @@
+.first-sec{
+    height: 260px;
+    background-image:linear-gradient(#393e46bf,#393e46ad), url(../wp7173841.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 30vh;
+}
+body{
+    background-color: #222831;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+nav{
+    background-color: #393E46;
+  
+
+  
+}
+.navbar-nav{
+    --bs-nav-link-color:white;
+    --bs-nav-link-hover-color: #00ADB5;
+}
+.navbar-nav:hover{
+    transition: 3s;
+}
+.navbar-brand{
+    color:white;
+}
+.navbar-brand:hover{
+    color:white;
+}
+.nav-position{
+    position: sticky;
+    top:2%;
+   left:50%;
+   transform: translateX(-25%);
+   max-width: 70%;
+  
+
+
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    --bs-navbar-active-color: #00ADB5;
+}
+.sec-section img{
+    width:100%;
+}
+.gameCard:hover{
+    transform: scale(1.07);
+    transition:  1s ease-in-out;
+    box-shadow: 
+    0 0 0px #00adb5,   /* Soft blue glow close to the text */
+    0 0 0px #413fc0,  /* Purple shadow further away */
+    0 0 2px #0900b5,   /* Another soft blue glow */
+    0 0 1px #00adb5;  /* Dark blue shadow */
+
+
+}
+ .gameCard {
+        border: 0.1px solid #0882952f;
+        padding: 10px;
+     
+         
+ }
+ .gameCard img {
+    transition: filter 1s ease, transform 1s ease;
+    filter: brightness(0.9) saturate(0.4);
+}
+
+.gameCard:hover img {
+    filter: brightness(1.1) saturate(1.1);
+ 
+}
+
+ 
+
+
+.game-desc{
+  height: 50px;
+}
+.lighBoxContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.621); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightBox {
+    background-color: #393E46;
+    color:#EEEEEE;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    
+}
+
+.lightBox .row {
+    width: 100%;
+    margin: 0;
+}
+
+.lightBox .col-lg-4 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.lightBox .col-lg-8 {
+    padding-left: 20px;
+}
+
+.loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .loader:before , .loader:after{
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    inset: 0;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3) inset;
+  }
+  .loader:after {
+    box-shadow: 0 2px 0 #FF3D00 inset;
+    animation: rotate 2s linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% {  transform: rotate(0)}
+    100% { transform: rotate(360deg)}
+  }
+
+.loading{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #222831;
+    z-index: 999;
+
+
+
+}
+.fontSize{
+    font-size: 12px;;
+}
+.btnStyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 0;
+    height: 28px;
+}
